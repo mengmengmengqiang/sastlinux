@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>远程登陆</title>
+    <script src="../../js/jquery-3.1.1.slim.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <link href="../../css/bootstrap.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">SAST-LINUX</a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav" role="tablist">
+                <li><a href="../../index.html">首页</a></li>
+                <li class="active"><a href="../../courseslist.html">课程</a></li>
+                <li><a href="../../resource.html">资源</a></li>
+                <li><a href="../../about.html">关于</a></li>
+                <li><a href="http://www.njuptsast.org/">SAST主页</a></li>
+                <li><a href="https://wizardforcel.gitbooks.io/vbird-linux-basic-4e/content/index.html">鸟哥的linux私房菜</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <p>讲道理这章应该讲怎么装系统，但是之前有一些知识还是需要大家提前了解一下</p>
+    <p>BIOS和MBR,EFI和GPT，这些东西的区别，我们不准备细讲，大概讲讲，然后因为柏阿姨要求布置作业。。。你们懂得</p>
+    <p>MBR和GPT，之前的旧机子一般都用MBR，然后现在的新机子一般采用GPT，不过也有MBR和GPT互转的方法</p>
+    <ul>
+        <li style="line-height: 40px; text-align: center; width: 160px; text-indent: 0em;"><a href="http://baike.baidu.com/view/361.htm" target="_blank">度娘百科之BIOS</a></li>
+        <li style="line-height: 40px; text-align: center; width: 160px; text-indent: 0em;"><a href="http://baike.baidu.com/subview/9485/9079238.htm#viewPageContent" target="_blank">度娘百科之MBR</a></li><br>
+        <li style="line-height: 40px; text-align: center; width: 160px; text-indent: 0em;"><a href="http://baike.baidu.com/view/112215.htm" target="_blank">度娘百科之EFI</a></li><br>
+        <li style="line-height: 40px; text-align: center; width: 160px; text-indent: 0em;"><a href="http://baike.baidu.com/item/GPT/15413476">度娘百科之GPT</a></li><br>
+    </ul>
+    <p>然后我觉得安装系统还需要先简单了解一些linux的目录树</p>
+    <img src="tree.jpg" class="img-responsive">
+    <p>简单说说，最上的<strong>/</strong>是根目录，其他的目录都是根目录下的目录</p>
+    <p>然后安装的时候会让你们自己选择分区，我们可以直接就给/分就好了</p>
+    <p>当然也可以单独为某个目录分大小，但是目前我看来是没有必要的</p>
+    <p>还有swap分区，这个关于swap分区的作用我们以后会讲，原则上是要分的，原则上建议分和你的内存一样大,如果你的磁盘不够分个1个g也没事</p>
+    <p>接下来就是最重要的启动分区，如果是虚拟机，就直接下一步就行，别忘了重启的时候把启动顺序改一下</p>
+    <p>如果你装的是双系统，如果你的是GPT，那么你可以找到一个分区是windows EFI的分区，直接把启动器安装到那个分区就好,新手不建议直接双系统，可以先远程登陆或者虚拟机练习练习</p>
+    <p><a href="虚拟机.html">虚拟机安装ubuntu</a></p>
+    <p><a href="arch.html">林恩怜学长去年写的安装虚拟机教程，比我的详细</a></p>
+
+</div>
+</body>
+</html>

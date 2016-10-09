@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>虚拟机</title>
+    <script src="../../js/jquery-3.1.1.slim.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <link href="../../css/bootstrap.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">SAST-LINUX</a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav" role="tablist">
+                <li><a href="../../index.html">首页</a></li>
+                <li class="active"><a href="../../courseslist.html">课程</a></li>
+                <li><a href="../../resource.html">资源</a></li>
+                <li><a href="../../about.html">关于</a></li>
+                <li><a href="http://www.njuptsast.org/">SAST主页</a></li>
+                <li><a href="https://wizardforcel.gitbooks.io/vbird-linux-basic-4e/content/index.html">鸟哥的linux私房菜</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <p>虚拟机，试试在虚拟机装Linux，首先声明，这不是必需的，后面的课程主要是通过远程控制来完成，不一定非要有
+        个Linux，自己装Linux，哪怕是在虚拟机装，也是比较折腾人的，一节课装个系统的话就什么都干不了了，所以建议是有打算
+        更深入学习Linux的同学，在课后时间自己安装上Linux。</p><br>
+    <p>首先要知道虚拟机是什么，其实就是通过软件模拟出一台电脑需要的硬件，也就是用来在电脑里运行一台电脑，
+        相对于“虚拟机”来说，安装虚拟机软件的被称为“实体机”，“宿主机”，这虚拟机不论发生了什么，都不会对实体机造成
+        多大的影响，一般最多就只是相当于一个程序崩溃了，所以通常虚拟机有被用来做些比较危险的事，比如运行安全性未知
+        的程序，再比如在虚拟机研究启动引导相关的，就不用频繁重启实体机了。</p><br>
+    <p>这里，要做的是在虚拟机里安装Linux，一般常用的虚拟机就是两种，VMware,VitrualBox,两者都是
+        跨平台的，windows，Linux，Mac都有相应的版本，这两个最大的区别就是，VitrualBox是开源免费的，可以直接在
+        官网免费下载使用，如果是上课时间就别下载了，找我copy，VitrualBox下载，然而VMware是收费的，所以下面用VitrualBox。</p><br>
+    <p>其实一个普通软件的简单使用是属于计算机基础的，也就是拿到手上随便点点就要能简单使用，所以这里只
+        上几张图，其他的只要胆大心细，敢于折腾就可以了，一开始也说了，不愿意折腾的可以不装Linux，只用远程控制就够学了。</p><br>
+
+    <img src="myvbox1.png" class="img-responsive">
+    <p>这是虚拟机的主页面，不过我的是linux下的虚拟机，可能和你们有点区别</p><br><br><br>
+    <img src="myvbox2.png" class="img-responsive">
+    <p>按new按键，新建一个虚拟机，取名字就随便了，type和Version和你们的镜像来</p><br><br><br>
+    <img src="myvbox3.png" class="img-responsive">
+    <p>为虚拟机分配内存，这个后期可以改，不要分太大，不然你的主系统会卡死</p><br><br><br>
+    <img src="myvbox4.png" class="img-responsive">
+    <p>为镜像分硬盘大小，不用很大，大约10个g就够</p><br><br><br>
+    <img src="ubuntu01.png" class="img-responsive">
+    <p>然后顺利启动，看上面有两个选项，第一个就是livecd模式，就是try一下，你用完关机之后所有的数据都会清空，要安装的话选择第二个，install</p><br><br><br>
+    <img src="ubuntu02.png" class="img-responsive">
+    <p>这里什么也不要选，不然会可能卡死狗</p><br><br><br>
+    <img src="ubuntu03.png" class="img-responsive">
+    <p>这里，如果你的是虚拟机的话，直接选第一个就好，它会自动帮你分区安装启动引导</p>
+    <p>这里提一下如果你想安装双系统，请<strong>一定要选择第三个，一定要选择第三个，选第一个你的windows就gg了</strong></p><br><br><br><br>
+    <img src="ubuntu04.png" class="img-responsive">
+    <p>接下来就是分区的问题了，如果GPT的话是不分逻辑分区和主分区的，我们分一大块直接挂载在/根目录，格式选择ext4</p>
+    <p>然后我们还要分一些给swap</p><br><br><br><br>
+    <img src="ubu06.png" class="img-responsive">
+    <p>(暂时有待商榷)这个就是安装引导器的选项，如果你能在上面的分区里看到windows　EFI分区，直接选择那个分区就好</p><br><br><br><br>
+</div>
+</body>
+</html>
