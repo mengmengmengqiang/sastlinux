@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ssh</title>
+    <script src="../../js/jquery-3.1.1.slim.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <link href="../../css/bootstrap.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">SAST-LINUX</a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav" role="tablist">
+                <li><a href="../../index.html">首页</a></li>
+                <li class="active"><a href="../../courseslist.html">课程</a></li>
+                <li><a href="../../resource.html">资源</a></li>
+                <li><a href="../../about.html">关于</a></li>
+                <li><a href="http://www.njuptsast.org/">SAST主页</a></li>
+                <li><a href="https://wizardforcel.gitbooks.io/vbird-linux-basic-4e/content/index.html">鸟哥的linux私房菜</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <p>SSH，Windows下利用软件Putty，通过SSH远程控制Linux。</p><br>
+    <img src="putty1.png" class="img-responsive"><br><br>
+    <p>一看就知道，这东西很强大很复杂，事实上SSH也确实不只是简单的远程登陆，但这里只演示最基本的功能，ssh远程登陆。</p><br>
+    <img src="putty2.png" class="img-responsive"><br><br>
+    <p>远程控制首先要有个服务器去控制，这里贡献上我们几个人的vps，
+    <table class="table">
+        <thead>
+        <tr>
+            <th>地址</th>
+            <th>账户</th>
+            <th>密码</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>121.42.211.141</td>
+            <td>student</td>
+            <td>student</td>
+        </tr>
+        <tr>
+            <td>Sachin</td>
+            <td>Mumbai</td>
+        </tr>
+        </tbody>
+    </table>
+    <p>
+        同学们可以随便搞，搞坏了我重装就是，
+        输入地址点了open然后就是账号密码了，但是第一次可能会有个对话框，点是就行了，这是记录地址对应的主机的，SSH为了安全
+        需要记录了这个，如果地址对应的主机变了，就不让连了。</p><br>
+    </p>
+    <img src="putty3.png" class="img-responsive"><br>
+    <img src="putty4.png" class="img-responsive"><br><br>
+    <p>成功登陆的同学就有了个Linux用了，这样后面的学习可以边学边尝试，才有意义，至于具体的命令，后面也有讲，但不是现在，现在可以随便看几个命令，随便输入看看，ls,echo,cd,cp,mv,rm,cat,clear。</p><br>
+    <img src="putty5.png" class="img-responsive"><br><br>
+    <p>几乎所有命令都能在man(menual手册)查到详细介绍。</p><br>
+    <img src="man_ls.png" class="img-responsive"><br><br>
+    <p>建议可以自己买个vps，linux环境的，比如阿里云的有学生优惠，9.9元/月，还有腾讯云的，1元/月，只要等学校要求在学信网注册后，就可以买了，其他都好贵。</p><br>
+</div>
+</body>
+</html>

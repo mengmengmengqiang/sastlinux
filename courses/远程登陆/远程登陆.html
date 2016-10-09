@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>远程登陆</title>
+    <script src="../../js/jquery-3.1.1.slim.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <link href="../../css/bootstrap.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">SAST-LINUX</a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav" role="tablist">
+                <li><a href="../../index.html">首页</a></li>
+                <li class="active"><a href="../../courseslist.html">课程</a></li>
+                <li><a href="../../resource.html">资源</a></li>
+                <li><a href="../../about.html">关于</a></li>
+                <li><a href="http://www.njuptsast.org/">SAST主页</a></li>
+                <li><a href="https://wizardforcel.gitbooks.io/vbird-linux-basic-4e/content/index.html">鸟哥的linux私房菜</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <p>远程控制，首先说说“图形界面”和“字符界面”，一般，我们操作Windows电脑，都是通过“图形界面”。</p><br>
+    <img src="txjm.png" class="img-responsive"><br><br>
+    <p>相对的，还有就是“命令行界面”，或者叫“字符界面”“控制台”“终端”，console,等等各种叫法，这是windows的cmd，也是个字符界面。</p><br>
+    <img src="wconsole.png" class="img-responsive"><br><br>
+    <p>linux服务器通常都是没有图形界面的，也就这几年慢慢流行桌面版的Linux，各种Ubuntu之类的名气突然大了起来，但我们还是要熟悉Linux的字符界面操作，远程控制最常见的就是ssh了，ssh远程控制得到的就是个字符界面，服务器和客户端之间传输的是一个个的字符，构成的一条条的命令，客户端发送命令给服务器，服务器执行命令并返回结果。</p><br>
+    <img src="ssh1.png" class="img-responsive"><br><br>
+    <p>还有就是vnc，这个是图形界面的控制，看起来就像是电脑里面又开了个电脑，这个vnc客户端的窗口，看就像是另一台电脑的显示器一样。</p><br>
+    <img src="vnc4.png" class="img-responsive"><br>
+    <img src="vnc5.png" class="img-responsive"><br>
+
+    <ul>
+        <li style="line-height: 40px; text-align: center; width: 200px; text-indent: 0em;"><a href="ssh.html">ssh</a></li>
+        <li style="line-height: 40px; text-align: center; width: 200px; text-indent: 0em;"><a href="vnc.html">vnc</a></li>
+        <li style="line-height: 40px; text-align: center; width: 200px; text-indent: 0em;"><a href="http://baike.baidu.com/view/51293.htm" target="_blank">度娘百科-远程控制</a></li>
+        <li style="line-height: 40px; text-align: center; width: 200px; text-indent: 0em;"><a href="http://baike.baidu.com/view/160932.htm" target="_blank">度娘百科-VNC</a></li>
+        <li style="line-height: 40px; text-align: center; width: 200px; text-indent: 0em;"><a href="http://baike.baidu.com/subview/16184/5909252.htm" target="_blank">度娘百科-SSH</a></li>
+        <li style="line-height: 40px; text-align: center; width: 200px; text-indent: 0em;"><a href="http://baike.baidu.com/view/5483485.htm" target="_blank">度娘百科-命令行界面</a></li>
+        <li style="line-height: 40px; text-align: center; width: 200px; text-indent: 0em;"><a href="http://baike.baidu.com/view/1186818.htm" target="_blank">度娘百科-图形界面</a></li>
+
+    </ul>
+</div>
+</body>
+</html>

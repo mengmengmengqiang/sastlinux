@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vnc</title>
+    <script src="../../js/jquery-3.1.1.slim.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <link href="../../css/bootstrap.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">SAST-LINUX</a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav" role="tablist">
+                <li><a href="../../index.html">首页</a></li>
+                <li class="active"><a href="../../courseslist.html">课程</a></li>
+                <li><a href="../../resource.html">资源</a></li>
+                <li><a href="../../about.html">关于</a></li>
+                <li><a href="http://www.njuptsast.org/">SAST主页</a></li>
+                <li><a href="https://wizardforcel.gitbooks.io/vbird-linux-basic-4e/content/index.html">鸟哥的linux私房菜</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <p>VNC，Windows下利用VNCviewer，通过VNC远程控制Linux，Linux通常不用VNC远程控制，因为传输图像的数据量就比较大了，对网速的要求就比较大了，网速不够的话，控制起来就是卡卡的，所以我手头上的vps并没有搭VNC服务，也没有图形界面，下面用来测试的是在学校一个服务器上建的虚拟机，这虚拟机我是用来挂着vpn服务器的，平时有人用，所以不能乱搞，通过vnc远程控制这个虚拟机，有两种不同的情况，但是有一点，多人登陆的话，看到的控制的，都是一样的，下面如果需要帐号密码，都是aoeiuv第一个，虚拟机本身提供的vnc服务，是真的像显示器一样能看到这个系统，包括开关机画面什么的，都能看到，地址是180.209.64.41，端口是15900。</p><br>
+    <img src="vncviewer1.png" class="img-responsive"><br>
+    <img src="vncviewer2.png" class="img-responsive"><br>
+    <img src="vnc4.png" class="img-responsive"><br><br>
+    <p>这样就能看到桌面了，而且这不是丑，这叫简洁，这个桌面是openbox，还有其他很多种华丽的桌面，Linux这个换桌面环境和Windows换主题是完全不一样的，不同桌面环境看上去是天差地别的。</p><br>
+    <p>第二个，Linux上运行一个vnc服务端程序，地址是180.209.64.41，端口是15901，这样和vnc依赖这个服务端程序，通常只是提供一个桌面环境的入口，连接进来就是桌面。</p><br>
+    <img src="vncviewer3.png" class="img-responsive"><br><br>
+    <p>VNC看看就行了，主要还是用SSH，Linux毕竟还是用字符界面，还有个叫“实验楼”的自学网站，有提供实践环境，随便选个免费课程就会提供个一小时的Linux，直接就是在网页上通过vnc控制的，可以注册试试。</p><br>
+    <ul>
+        <li style="line-height: 40px; text-align: center; width: 120px; text-indent: 0em;"><a href="01">实验楼介绍</a></li>
+        <li style="line-height: 40px; text-align: center; width: 120px; text-indent: 0em;"><a href="https://www.shiyanlou.com/" target="_blank">实验楼</a></li>
+        <li style="line-height: 40px; text-align: center; width: 120px; text-indent: 0em;"><a href="http://www.oschina.net/news/53152/top-7-desktop-environment-linux" target="_blank">Linux七大桌面</a></li><br>
+    </ul>
+</div>
+</body>
+</html>
