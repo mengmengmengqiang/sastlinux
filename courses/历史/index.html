@@ -37,18 +37,18 @@
         <h1><img src="world.JPG" width="100%" height="100%"></h1>
     </section>
 
-    <section class="slide" id="howtoread">
+    <section class="slide">
         <h1>Linux怎么读</h1>
     </section>
 
 
-    <section class="slide" id="freetoread">
+    <section class="slide">
         <h1><img src="howtoread.png"></h1>
     </section>
 
 
 
-    <section class="slide" id="preview">
+    <section class="slide deck-current" aria-hidden="false">
         <h2>概述</h2>
           <ol>
               <li>
@@ -66,8 +66,85 @@
           </ol>
       </section>
 
-        <section class="slide" id="windows">
-            <h2>跳不过去的问题-和windows的比较</h2>
+    <section class="slide">
+        <h2>简单说说历史</h2>
+        <ul>
+            <h3><a href="tu.gif">类unix系统图谱</a></h3>
+            <h3><a href="linux-devel.pdf">完整的历史</a></h3>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>unix-like与POSIX规范</h2>
+        <p><strong>类Unix系统</strong></p>
+        <p>指各种传统的Unix系统（比如FreeBSD、OpenBSD、SUN公司的Solaris）以及各种与传统Unix类似的系统（例如Mi
+            nix、Linux、QNX等）。它们虽然有的是自由软件，有的是商业软件，但都相当程度地继承了原始UNIX的特性，
+            有许多相似处，并且都在一定程度上遵守POSIX规范。</p>
+        <p><strong>POSIX规范</strong></p>
+
+        <p>#include "pthread.h"  //在Linux下编写多线程程序需要包含的头文件</p>
+        <p> POSIX线程（POSIX threads），简称Pthreads，是线程的POSIX标准。该标准定义了创建和操纵线程的一整套API。在类Unix操作系统（Unix、Linux、Mac OS X等）中，
+            都使用Pthreads作为操作系统的线程。Windows操作系统也有其移植版pthreads-win32。
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>GNU与GPL</h2>
+        <ul>
+            <li class="slide">Gnu is Not Unix</li>
+            <li class="slide">由Richard Stallman在1983年9月27日公开发起的。它的目标是创建一套完全自由的操作系统。Richard Stallman最早是在net.unix-wizards
+                新闻组上公布该消息，并附带《GNU宣言》等解释为何发起该计划的文章，其中一个理由就是要“重现当年软件界合作互助的团结精神”。为保证
+                GNU软件可以自由地“使用、复制、修改和发布”，所有GNU软件都有一份在禁止其他人添加任何限制的情况下授权
+                所有权利给任何人的协议条款，GNU通用公共许可证（GNU General Public License，GPL）。即“反版权”（或称Copyleft）概念。
+            </li>
+        </ul>
+    </section>
+
+
+    <section class="slide">
+        <img src="linus.jpg">
+    </section>
+
+
+    <section class="slide">
+        <h2>林纳斯·托瓦兹</h2>
+        <ul>
+            <li class="slide"><h3>著名项目</h3>
+                <ul>
+                    <li class="slide">linux内核</li>
+                    <li class="slide">git</li>
+                </ul>
+            </li>
+            <li class="slide"><h3>时代杂志2000年，在时代100人:本世纪最重要的人物,位居第17名</h3></li>
+            <li class="slide"><h3>“Talk is cheap. Show me the code.”</h3></li>
+            <li class="slide"><h3>Just For Fun</h3></li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <img src="minix.png" style="margin-top: 40px">
+    </section>
+
+    <section class="slide">
+        <img src="Gnu.JPG">
+    </section>
+
+    <section class="slide" id="preview">
+        <h2>理查德·斯托曼</h2>
+        <ul>
+            <li class="slide"><h3>GNU</h3>
+                <ul>
+                    <li class="slide">GCC</li>
+                    <li class="slide">EMACS</li>
+                </ul>
+            </li>
+            <li class="slide"><h3>政治活动家，为自由软件辩护，对抗软件专利及版权法</h3></li>
+            <li class="slide"><h3>若为自由故</h3></li>
+        </ul>
+    </section>
+
+        <section class="slide">
+            <h2>和windows的比较</h2>
             <ul>
                 <li class="slide">
                     <h3>各有所擅长</h3>
@@ -88,36 +165,96 @@
                 </li>
             </ul>
         </section>
-      <section class="slide" id="somethingcool">
-          <h2>演示一下</h2>
-          <ul>
-              <li class="slide">
-                  <h3>终端</h3>
-              </li>
-              <li class="slide">
-                  <ol>
-                  <li>Vim-编辑器之神</li>
-                      <li>写代码</li>
-                      <li>远程服务器</li>
-                  </ol>
-              </li>
-              <li class="slide">
-                  <h3>优越的包管理机制</h3>
-              </li>
-              <li class="slide">
-                  <h3>高度自由</h3>
-              </li>
-          </ul>
-      </section>
-      <section class="slide" id="meaning">
+
+    <section class="slide">
+        <img src="operatingsystem.png" style="margin-top: 150px">
+    </section>
+
+    <section class="slide">
+        <img src="web.png"style="margin-top: 150px">
+    </section>
+    <section class="slide" id="somethingcool">
+        <h2>发行版本与内核</h2>
+        <ul>
+            <li class="slide"><h3>严格来讲，术语Linux只表示操作系统内核本身，但通
+                常采用Linux内核来表达该意思。Linux则常用来指基于Linux内核的完整操作系统，包括GUI组件和许多其他实用工具。</h3>
+                <img src="kernel.png">
+            </li>
+            <li class="slide"><h3>各个公司或者是组织或者是个人定制内核,然后配上软件，开始发行。</h3></li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>发行版本</h2>
+        <ul>
+            <li class="slide">debian系
+                <ul>
+                    <li>Ubuntu</li>
+                    <li>Linux Mint</li>
+                    <li>Kali Linux</li>
+                </ul>
+            </li>
+            <li class="slide">redhat系
+                <ul>
+                    <li>CentOS</li>
+                    <li>Fedora</li>
+                </ul>
+            </li>
+            <li class="slide">ArchLinux</li>
+            <li class="slide">OpenSuse</li>
+            <li class="slide">Gentoo</li>
+            <li class="slide">freebsd</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>认一认Logo</h2>
+        <img src="dis.png">
+    </section>
+
+
+    <!--<section class="slide" id="somethingcool">-->
+          <!--<h2>演示一下</h2>-->
+          <!--<ul>-->
+              <!--<li class="slide">-->
+                  <!--<h3>终端</h3>-->
+              <!--</li>-->
+              <!--<li class="slide">-->
+                  <!--<ol>-->
+                      <!--<li>Vim-编辑器之神</li>-->
+                      <!--<li>写代码</li>-->
+                      <!--<li>远程服务器</li>-->
+                  <!--</ol>-->
+              <!--</li>-->
+              <!--<li class="slide">-->
+                  <!--<h3>优越的包管理机制</h3>-->
+              <!--</li>-->
+              <!--<li class="slide">-->
+                  <!--<h3>高度自由</h3>-->
+              <!--</li>-->
+          <!--</ul>-->
+      <!--</section>-->
+      <section class="slide">
           <h2>为什么要学习Linux</h2>
           <ul>
-              <li><h3>好玩</h3></li>
+              <li><h3>信仰</h3></li>
               <li><h3>作为开发环境？</h3></li>
               <li><h3>增加见识,windows外面的世界</h3>(比如加深对环境变量的理解)</li>
               <li><h3>扩展发展方向　虚拟化,大数据，后端，运维，kernel等</h3></li>
           </ul>
       </section>
+
+    <section class="slide">
+        <h2>命令提示符</h2>
+        <ul>
+            <h3><strong>dir:</strong>显示磁盘目录文件</h3>
+            <h3><strong>cd:</strong>转换当前目录</h3>
+            <h3><strong>ping:</strong>一种快速查看自己有没有网的方法</h3>
+        </ul>
+    </section>
+
+
+
     <!-- End slides. -->
 
     <!-- Begin extension snippets. Add or remove as needed. -->
