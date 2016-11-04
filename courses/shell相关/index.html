@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>shell</title>
+    <script src="../../js/jquery-3.1.1.slim.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <link href="../../css/bootstrap.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">SAST-LINUX</a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav" role="tablist">
+                <li><a href="../../index.html">首页</a></li>
+                <li class="active"><a href="../../courseslist.html">课程</a></li>
+                <li><a href="../../resource.html">资源</a></li>
+                <li><a href="../../about.html">关于</a></li>
+                <li><a href="http://www.njuptsast.org/">SAST主页</a></li>
+                <li><a href="https://wizardforcel.gitbooks.io/vbird-linux-basic-4e/content/index.html">鸟哥的linux私房菜</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <p>稍稍深入一点认识Shell</p>
+
+    <p>Shell地位相当于windows上的cmd，或者说是PowerShell，</p>
+    <p>首先Shell本身也是一个程序，或者说只是一个程序，</p>
+
+    <p>Shell的英文直译是“壳”，是相对于“核”的，
+    “核”是看不见的然而“壳”是看的见的，
+    也就是Shell其实就是操纵Linux的人直接控制的东西，</p>
+
+    <p>说白了就是那个输入命令的界面，
+    我们的一个一个命令实际上都是传给Shell，
+    然后由Shell产生新进程去调用其他程序，</p>
+    <p>就是一个命令的解释器，类似于python的解释器，一行一行的输入和解释，如果写入一个文件再去解释就是脚本</p>
+    <br>
+    <p>解释器也有不同的，像python的解释器也有好几个不同的实现，linux也是</p>
+    <p>用的最广泛的是bash,其他的还有zsh,csh之类</p>
+    <p>不同的解释器，大多是相同的，但是还是有点不同的，有些语法方面会有差别,像查看上一个任务的返回码</p>
+    <p>.bashrc文件-进入各种SHELL时都会先执行一些脚本</p>
+    <p></p>
+    <p>变量</p>
+    <p>类似与python一样，我们可以定义自己的变量，用echo查看变量以及做一些运算</p>
+    <p>用set查看定义的变量</p>
+    <p>unset删除变量</p>
+    <p>export把设定传到子shell</p>
+    <p>一些特殊的变量</p>
+    <ul>
+        <li>HOME-用户的家目录，比如直接的cd就默认到家目录</li>
+        <li>USER-用户</li>
+        <li>SHELL</li>
+        <li>LANG</li>
+        <li><a href="ps1.html">PS1-命令提示符</a></li>
+        <li><a href="path.html">PATH</a></li>
+    </ul>
+</div>
+</body>
