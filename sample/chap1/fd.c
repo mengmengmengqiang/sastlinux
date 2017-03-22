@@ -10,6 +10,6 @@
 int main(int argc, char *argv[])
 {
 	char buffer[BUFFER] = "hello,world\n";
-	write(STDOUT_FILENO, buffer,BUFFER);
+	write(1, buffer,BUFFER);
 	return 0;
 }

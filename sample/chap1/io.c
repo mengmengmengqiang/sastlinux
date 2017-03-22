@@ -8,8 +8,8 @@
 int main(int argc, char *argv[])
 {
 	//printf("start ....");
-	//printf("start ....\n");
-	write(1, "start....", 10);
+	printf("start ....\n");
+//	write(1, "start....", 10);
 	sleep(3);
 	printf("finish ....");
 	return 0;

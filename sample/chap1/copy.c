@@ -29,7 +29,23 @@ int main(int argc, char *argv[])
 	while((length = read(read_fd, buffer, 1024)) > 0) {
 		write(write_fd, buffer, length);
 	}
-	close(read_fd);
-	close(write_fd);
 	return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
